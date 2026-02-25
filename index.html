@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumeMint | Professional Resume Builder</title>
+    <meta name="description" content="Create a professional, modern resume in minutes with ResumeMint. Real-time preview, multiple templates, and easy PDF export.">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Resume<span>Mint</span></div>
+                <div class="nav-links">
+                    <a href="#premium" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Go Premium</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Create Professional Resume <br>in 2 Minutes</h1>
+                <p>Build a job-winning resume with our easy-to-use builder. Professional templates, real-time preview, and instant PDF download.</p>
+                <button id="create-btn" class="btn btn-primary">Create Resume Now</button>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <i>⚡</i>
+                    <h3>Super Fast</h3>
+                    <p>Just fill in your details and see your resume come to life instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <i>🎨</i>
+                    <h3>Modern Templates</h3>
+                    <p>Choose from professional designs tailored for modern recruiters.</p>
+                </div>
+                <div class="feature-card">
+                    <i>📄</i>
+                    <h3>PDF Download</h3>
+                    <p>Download your resume as a high-quality PDF ready for applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Builder Section -->
+    <section id="builder">
+        <div class="container">
+            <div class="builder-grid">
+                
+                <!-- Left: Form -->
+                <div class="form-container">
+                    <div class="template-selector">
+                        <div class="template-option active" data-template="classic">Classic</div>
+                        <div class="template-option" data-template="modern">Modern</div>
+                        <div class="template-option" data-template="minimal">Minimal</div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Personal Information</h2>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 234 567 890">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="New York, USA">
+                        </div>
+                        <div class="form-group">
+                            <label for="links">LinkedIn / Portfolio</label>
+                            <input type="text" id="links" placeholder="linkedin.com/in/johndoe">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Career Objective</h2>
+                        <div class="form-group">
+                            <textarea id="objective" placeholder="Briefly describe your career goals and professional background..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Education</h2>
+                        <div class="form-group">
+                            <textarea id="education" placeholder="B.Sc in Computer Science, University of Technology, 2020"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Skills</h2>
+                        <div class="form-group">
+                            <input type="text" id="skills" placeholder="JavaScript, React, Node.js, UI/UX Design">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Work Experience</h2>
+                        <div class="form-group">
+                            <textarea id="experience" placeholder="Senior Developer, Tech Corp, 2020 - Present&#10;Led a team of 5 to build scalable web applications..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Projects (Optional)</h2>
+                        <div class="form-group">
+                            <textarea id="projects" placeholder="E-commerce Platform - Built a full-stack store using MERN stack."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Preview -->
+                <div class="preview-container">
+                    <div class="preview-header">
+                        <span>Live Preview</span>
+                        <button type="button" id="downloadBtn" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">Download Resume PDF</button>
+                    </div>
+                    <div id="resume-preview" class="template-classic">
+                        <!-- Preview content injected by JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium">
+        <div class="container">
+            <div class="premium-card">
+                <h2>Upgrade to Premium</h2>
+                <p>Get the most out of ResumeMint with our premium features.</p>
+                <ul>
+                    <li>Remove "Created with ResumeMint" watermark</li>
+                    <li>Access to 10+ Premium Templates</li>
+                    <li>Priority Support</li>
+                    <li>Unlimited Resume Versions</li>
+                </ul>
+                <button id="upgrade-btn" class="btn btn-primary" style="width: 100%; background-color: #fbbf24; color: #000;">Upgrade Now - ₹49</button>
+                <p style="font-size: 0.75rem; margin-top: 1rem; opacity: 0.7;">Secure payment via Razorpay / Stripe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: white; margin-bottom: 1rem;">Resume<span>Mint</span></div>
+                    <p style="color: #94a3b8; font-size: 0.9rem;">Empowering professionals to build their dream careers with beautiful, effective resumes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 ResumeMint. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
